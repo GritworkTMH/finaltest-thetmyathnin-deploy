@@ -4,7 +4,7 @@ phases:
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
-      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 637423662750.dkr.ecr.ca-central-1.amazonaws.com
+      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 637423662750.dkr.ecr.ca-central-1.amazonaws.com/thetmyathnin-finaltest
       - echo Logging in to Docker Hub...
       - echo "dckr_pat_laIX5eIzjIyt3X_4mdbF5PuyoO8" | docker login --username "thetmyathnin" --password-stdin
       - REPOSITORY_URI=637423662750.dkr.ecr.ca-central-1.amazonaws.com/finalhnin
